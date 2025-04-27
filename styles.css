@@ -336,4 +336,62 @@ body {
 
 /* Regular size screens */
 @media (min-width: 1024px) {
+  .design-elt {
+    transform: skewY(-20deg);
+  }
+
+  .projects {
+    margin: 50px;
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 25px;
+    column-gap: 25px;
+  }
+
+  .header {
+    display: flex;
+
+  }
+
+  .project {
+    width: 30vw;
+    margin-top: 0px;
+  }
+
+  .header-content {
+    /* position: relative; */
+    background-image: url("header-photo.jpg");
+    width: 300%;
+    height: 400px;;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 1;
+  }
+
+  .about-me {
+    margin: 0;
+    height: 50%;
+    align-self: center;
+  }
+
+  .social-logos {
+    justify-content: flex-end;
+  }
+
+  .social-logos img {
+    margin-right: 15px;
+    width: 30px
+  }
+
+  .footer {
+    display: flex;
+  }
+
+  .footer-image {
+    margin: 30px;
+    width: 350px;
+  }
 }
